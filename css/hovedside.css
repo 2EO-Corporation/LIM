@@ -4,13 +4,37 @@
 #intro{
     border: solid 2px black;
     height: 100vh;
+<<<<<<< Updated upstream
+=======
+    background: url(bilder/Blå_tskjorte1.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+>>>>>>> Stashed changes
 }
 
+/*Overskrift*/
+#overskrift{
+    margin: 0 auto;
+    background-color: grey;
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    width: 100vh;
+    opacity: 90%;
+    border-radius: 8px;
+}
 /*Navbar*/
 
 #toppnav{
     border: solid 2px orange;
     height: 40px;
+    background-color: orange;
+    position: sticky;
 
 }
 
