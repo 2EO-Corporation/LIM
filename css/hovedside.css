@@ -4,8 +4,6 @@
 #intro{
     border: solid 2px black;
     height: 100vh;
-
-
 }
 
 /*Navbar*/
@@ -18,19 +16,31 @@
 
 /*=========LIM-BOKSTAV===========*/
 
-#bakgrunn-bokstav-LIM{
-    display: flex;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    border: solid 10px purple;
-    justify-content: center;
-    justify-content: space-around;
-
+h3{
+    font-size: 50px;
+    margin: auto 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+#bakgrunn-bokstav-LIM{
+    display: grid;
+    grid-gap: 60px; /* mellomrom mellom "boksene"*/
+    grid-template-columns: repeat(3, 1fr);
+    border: violet 5px;
+    margin:100px;
+}
+
 
 .LIM-bokser{
     border: solid 2px blue;
-    padding: 20px;
+    background-color:black ;
+    -webkit-font-smoothing: antialiased;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: space-between;
+    text-align: center;
+
 
 }
 
