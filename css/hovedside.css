@@ -29,9 +29,8 @@
 /*Navbar*/
 
 #toppnav{
-    border: solid 2px orange;
     height: 40px;
-    background-color: orange;
+    background-color: rgb(100, 98, 98);
     position: sticky;
 
 }
@@ -47,7 +46,7 @@ h3{
 /* bokser*/
 #bakgrunn-bokstav-LIM{
     display: grid;
-    grid-gap: 60px; /* mellomrom mellom "boksene"*/
+    grid-gap: 100px; /* mellomrom mellom "boksene"*/
     grid-template-columns: repeat(3, 1fr);
     margin:100px;
 }
@@ -55,14 +54,25 @@ h3{
 
 .LIM-bokser{
     display: flex;
-    background-color: grey;
     -webkit-font-smoothing: antialiased; /*gjør teksten "mykere"*/
-    color:white;
+    color: black;
     flex-direction: column; /* plasserer kosene på rekke*/
     padding: 1rem;
     justify-content: space-between;
     text-align: center;
-    border-radius: 6px;
+    border-radius: 10px;
+}
+
+#L-boks{
+    border: solid 15px #06d6a0;
+}
+#I-boks{
+    border: solid 15px #118ab2;
+}
+
+#M-boks{
+    border: solid 15px #ffd166;
+
 }
 /* Ikon*/
 
