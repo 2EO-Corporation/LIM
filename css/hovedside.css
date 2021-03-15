@@ -5,7 +5,8 @@
 #intro{
     border: solid 2px black;
     height: 100vh;
-   background-color: #77cc66;
+    background-color: honeydew;
+   background-image: url(bilder/logo\ transparent\ bg.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -74,7 +75,6 @@ h3{
 
 }
 /* Ikon*/
-
 
 /*=========HOVEDDEL============*/
 
