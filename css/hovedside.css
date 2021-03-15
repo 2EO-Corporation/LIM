@@ -80,10 +80,18 @@ h3{
 
 
 .hoveddel-1 { /* grønn boks*/
+<<<<<<< Updated upstream
     display: grid;
     grid-gap: 100px; /* mellomrom mellom "boksene"*/
     grid-template-columns: repeat(1, 1fr);
     margin:100px;
+=======
+    display: flex;
+    max-width: 1200px;
+    width: auto;    
+    padding: 50px;
+    border: 40px solid #77cc66;
+>>>>>>> Stashed changes
     margin: 0 auto;
 }
 .tekst-boks{ /* lagde en ekstra div- boks for å kontrolerer lengden på teksten*/
