@@ -6,11 +6,9 @@
     border: solid 2px black;
     height: 100vh;
     background-color: honeydew;
-   background-image: url(bilder/logo\ transparent\ bg.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+   background-image: url(bilder/logo\ transparent\ bg.png) ;
     background-size: cover;
+    background-position: ce;
     display: flex;
     justify-content: center;
     align-items: center;
