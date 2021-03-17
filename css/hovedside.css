@@ -79,13 +79,13 @@ h3{
 /*=========HOVEDDEL============*/
 
 
-.hoveddel-1 { /* grønn boks*/
+.hoveddel-1 { /* grønne bokser*/
     display: grid;
     grid-gap: 100px; /* mellomrom mellom "boksene"*/
     grid-template-columns: repeat(12, 1fr);
     margin:100px;
 }
-.bakgrunn{
+.bakgrunn{ /*lysegrønn*/
     background-color: honeydew;
     width: auto;
     padding: 30px;
@@ -101,10 +101,8 @@ h3{
     flex-direction: column; /* plasserer bosene på rekke*/
     justify-content: space-between;
     margin-bottom: 100px;
-
-  
-
 }
+
 
 .boks{
     padding: 8px;
