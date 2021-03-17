@@ -85,17 +85,23 @@ h3{
     grid-template-columns: repeat(12, 1fr);
     margin:100px;
 }
+.bakgrunn{
+    background-color: honeydew;
+    width: auto;
+    padding: 30px;
+}
 
 .tekst-boks{ /* lagde en ekstra div- boks for å kontrolerer lengden på teksten*/
     display: flex;
     align-items: center;
-    border:solid grey 30px;
+    border:solid #06d6a0 30px;
     padding: 3rem;
     -webkit-font-smoothing: antialiased; /*gjør teksten "mykere"*/
-    color: black;
+    color:black;
     flex-direction: column; /* plasserer bosene på rekke*/
     justify-content: space-between;
     margin-bottom: 100px;
+
   
 
 }
