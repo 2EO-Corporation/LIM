@@ -85,11 +85,7 @@ h3{
     grid-template-columns: repeat(12, 1fr);
     margin:100px;
 }
-.bakgrunn{ /*lysegrønn*/
-    background-color: honeydew;
-    width: auto;
-    padding: 30px;
-}
+
 
 .tekst-boks{ /* lagde en ekstra div- boks for å kontrolerer lengden på teksten*/
     display: flex;

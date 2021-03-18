@@ -1,0 +1,71 @@
+/*CSS TIL NAVBAR START*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:white;
+    position: sticky; 
+  }
+  
+  li {
+    float: right;
+  }
+  
+.BildeMeny{
+    float: left;
+}
+
+  li a {
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color:grey;
+  }
+/*CSS TIL NAVBAR SLUTT*/
+
+/*CSS GRIDS START*/
+.container{
+    display: grid;
+
+    grid-template-columns: (12, 1fr); /*1fr = 100%, 2fr er 100/2. Vi deler siden i 12 deler hvor disse tilsammen utgjør 100%*/
+    gap: 20px;
+}
+
+.grid{
+    pad: 8px;
+    background-color: white;
+    border: 4px solid red;
+     box-shadow: 0px 2px 6px rgb(0,0,0,0.25);
+    border-radius: 5px;
+}
+
+.Header{
+    grid-column: 1 / span 12; 
+}
+
+.LogoForside{
+    grid-column: 1/ span 12;
+    height: 100vh;
+}
+
+.KortOmOss{
+    grid-column: 1 / span 12;
+    height: 100vh;
+}
+
+.Bildegalleri{
+    grid-column: 1 / span 12;
+    height: 100vh;
+}
+
+.Footer{
+    grid-column: 1 / span 12;
+}
+/*CSS GRIDS SLUTT*/
