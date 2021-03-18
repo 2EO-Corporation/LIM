@@ -96,3 +96,80 @@ nav li a:hover {
 }
 
 
+/*CSS TIL BILDEGALLERI START
+.slider-frame{
+overflow: hidden;
+height: 800px;
+width: 1200px;
+margin-left: 360;
+margin-right: 20px;
+}
+
+/*----------SLIDE ANIMATION----------
+@-webkit-keyframes slide-animation{
+    0% {Left:0px}
+    10%{Left:0px}
+    20%{Left:1200px}
+    30%{Left:1200px}
+    40%{Left:2400px}
+    50%{Left:2400px}
+    60%{Left:1200px}
+    70%{Left:1200px}
+    80%{Left:0px}
+    90%{Left:0px}
+    100%{Left:0px}
+}
+
+.slider-images{
+    width: 3600px;
+    height: 800px;
+    margin-right: 0 0 0 -2400px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 33s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+
+.img-container{
+    height: 800px;
+    width: 1200px;
+    position: relative;
+    float: left;
+}
+
+/*-----------END OF ANIMATION-----------/*
+
+/*CSS BILDEGALLERI TEST 2*/
+#slideshow {
+  overflow: hidden;
+  height: 510px;
+  width: 728px;
+  margin: 0 auto;
+}
+
+.slide-wrapper {
+  width: 2912px;
+  -webkit-animation: slide 10s ease infinite;
+}
+
+.slide {
+  float: left;
+  height: 510px;
+  width: 728px;
+  background-image: cover;
+}
+
+
+@-webkit-keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -728px;}
+  50% {margin-left: -728px;}
+  60% {margin-left: -1456px;}
+  70% {margin-left: -1456px;}
+  80% {margin-left: -2184px;}
+  90% {margin-left: -2184px;}
+}
+/*GALLERI FERDIG*/
+
