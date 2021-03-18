@@ -1,33 +1,34 @@
 /*CSS TIL NAVBAR START*/
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color:white;
-    position: sticky; 
-  }
-  
-  li {
-    float: right;
-  }
-  
-.BildeMeny{
-    float: left;
+header {
+    background-color: white;
+
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
 }
 
-  li a {
+/*  https://www.w3schools.com/css/css_navbar_horizontal.asp
+*/
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: white;
+}
+  
+nav li {
+    float: left;
+}
+  
+nav li a {
     color: black;
     text-align: center;
-    vertical-align: middle;
     padding: 14px 16px;
     text-decoration: none;
-  }
+}
   
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color:grey;
-  }
+nav li a:hover {
+    background-color: grey;
+}
 /*CSS TIL NAVBAR SLUTT*/
 
 /*CSS GRIDS START*/
@@ -35,7 +36,7 @@ ul {
     display: grid;
 
     grid-template-columns: (12, 1fr); /*1fr = 100%, 2fr er 100/2. Vi deler siden i 12 deler hvor disse tilsammen utgjør 100%*/
-    gap: 20px;
+    gap: 10px;
 }
 
 .grid{
@@ -51,13 +52,26 @@ ul {
 }
 
 .LogoForside{
-    grid-column: 1/ span 12;
+    grid-column: 1/ span 12; 
     height: 100vh;
+    background-image: url(css/bilder/soccer.jpg); /*BAKGRUNNSBILDE*/
+    background-size: cover;
+
+    color: black; /*TEKST*/
+    text-align: center;
 }
 
+.LogoForsideTekst{
+    vertical-align: middle;
+}
 .KortOmOss{
     grid-column: 1 / span 12;
     height: 100vh;
+
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    line-height: 2.2;
 }
 
 .Bildegalleri{
@@ -69,3 +83,16 @@ ul {
     grid-column: 1 / span 12;
 }
 /*CSS GRIDS SLUTT*/
+
+.FooterFlexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    text-align: center;
+    padding: 3px;
+    background-color: white;
+    color: black;
+}
+
+

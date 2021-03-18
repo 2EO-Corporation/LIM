@@ -8,23 +8,59 @@
 <body>
     <div class="container"> <!--DIV FOR ALT INNHOLD TIL GRIDS-->
         
-        <header class="grid Header"> <!--HEADER OG NAVBAR-->
-            <ul>
-                <li class="BildeMeny"><img src="css/bilder/logo transparent bg.png" alt="lim logo" width="100px"></li>
-                <li><a href="default.asp">Home</a></li>
-                <li><a href="news.asp">News</a></li>
-                <li><a href="contact.asp">Contact</a></li>
-                <li><a href="about.asp">About</a></li>
-              </ul>
-        </header>
-        <div class="grid LogoForside" >LOGO <!--SETT INN BILDE OG LOGO HER--> </div>
 
-        <div class="grid KortOmOss"> Kort om oss</div>
+
+
+        <header class=" grid Header">
+            <img src="css/bilder/logo transparent bg.png" alt="lim logo" width="100px">
+            <nav>
+                <ul>
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                  </ul>
+            </nav>
+        </header>
+        <div class="grid LogoForside"> <h1 class="LogoForsideTekst"> <br><br> <br> <br> <br> <br>  Lekser Idrett Mat <br> - et aktivitetstilbud for barn og unge</h1> </div>
+
+
+
+
+
+        <div class="grid KortOmOss"> 
+             <br> <h2>Kort om oss</h2> <br><br>
+            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+                Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+        </div>
+
+
+
 
         <div class="grid Bildegalleri"> Bildegalleri</div>
 
-        <div class="grid Footer"> Footer</div>
+
+
+
+        <footer class="grid Footer FooterFlexbox">
+                <div>
+                    <p>
+                        Kontaktperson: <br>
+                        Arild Hovland <br>
+                        98817422 <br>
+                        oyvindfluge@gmail.com <br>
+                    </p>  
+                </div>
+                <div>
+                    <p>  
+                       Følg oss på sosiale medier
+                    </p>
+                </div>
+        </footer>
     </div>
-    
+  <script src="grid.js"></script>  
 </body>
 </html>
