@@ -68,10 +68,35 @@ nav li a:hover { /* gjør "boksene" endrer farge når muspekeren treffer dem*/
     height: 100vh;
 }
 
+/*=======hva tilbyr vi? (sport)===========*/
+
+.HvaTilbyrVi{ /* en liten test på bilde med tekst over*/
+    grid-column: 1/span 12;
+    text-align: center; /* sentrer teksten*/
+    padding: 20px;
+}
+.Fotball{
+    grid-column: 1/span 3;
+    grid-row: 3; 
+}
+
+.håndball{
+    grid-column: 4/span 7;
+    grid-row: 3;
+}
+
+.basketball{
+    grid-column: 8/ span 12;
+    grid-row: 3;
+}
+/*====== BILDEGALLERI=======*/
+
 .Bildegalleri{
     grid-column: 1 / span 12;
     height: 100vh;
 }
+
+/*==========FOOTER=========*/
 
 .Footer{
     grid-column: 1 / span 12;
@@ -107,6 +132,60 @@ nav li a:hover { /* gjør "boksene" endrer farge når muspekeren treffer dem*/
     padding-right: 100px;
     line-height: 2.2;
 }
+
+/* ===========TEST FADE OVERLAY BILDE===========*/
+
+
+.innhold{ /* "boksen rundt innholdet*/
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+}
+  
+.bilde {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0; /* beskriver hvor overlayen skal plasseres*/
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%; /* hvor stor del av bilde som skal fades*/
+    opacity: 0; /* overlayen vil ikke synes før man tar muspekeren på bilde, derav 0*/
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.innhold:hover .overlay {
+    opacity: 0.8; /* gjør teksten gjennomsiktig til man treffer med muspekeren*/
+}
+
+.tekt {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /* ser ut som om det justerer teksten på bildet*/
+    text-align: center;
+}
+
+
+/* =========== AVSLUTTER TEST FADE OVERLAY BILDE===========*/
+
+
+
+/*FOOTER*/
+
 
 .FooterFlexbox{ /*ONLY TEMPORARY*/
     display: flex;
