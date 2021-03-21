@@ -36,7 +36,47 @@ nav li a:hover { /* gjør "boksene" endrer farge når muspekeren treffer dem*/
 /*CSS TIL NAVBAR SLUTT*/
 
 
+/*=========LIM-BOKSTAV===========*/
 
+h3{
+    font-size: 50px;
+    margin: auto 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* bokser*/
+#bakgrunn-bokstav-LIM{
+    display: grid;
+    grid-gap: 80px; /* mellomrom mellom "boksene"*/
+    grid-template-columns: repeat(3, 1fr);
+    margin:80px;
+}
+
+.LIM-bokser{
+    display: flex;
+    -webkit-font-smoothing: antialiased; /*gjør teksten "mykere"*/
+    color: black;
+    flex-direction: column; /* plasserer bosene på rekke*/
+    padding: 1rem;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    border-radius: 10px; /*gjør kantene runde*/
+}
+
+#L-boks{
+    border: solid 15px #06d6a0;
+}
+#I-boks{
+    border: solid 15px #118ab2;
+}
+
+#M-boks{
+    border: solid 15px #ffd166;
+
+}
+/*----LIM BOKSTAV SLUTT -----*/
 
 /*-----------CSS GRIDS START------------*/
 .container{
@@ -79,7 +119,7 @@ nav li a:hover { /* gjør "boksene" endrer farge når muspekeren treffer dem*/
     grid-row: 3; 
     padding: 20px;
 }
-}
+
 
 .håndball{
     grid-column: 4/span 7;
@@ -92,7 +132,7 @@ nav li a:hover { /* gjør "boksene" endrer farge når muspekeren treffer dem*/
     grid-row: 3;
     padding: 20px;
 }
-}
+
 /*====== BILDEGALLERI=======*/
 
 .Bildegalleri{
