@@ -1,10 +1,15 @@
 /*CSS TIL NAVBAR START*/
-header {
-    background-color: white;
+.navbar{
+    background-color: pink;
 
+}
+
+header {
     display: flex;
     justify-content:space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 /*  https://www.w3schools.com/css/css_navbar_horizontal.asp
 */
@@ -13,10 +18,10 @@ header {
 /* "Nav" = navnet på en klasse, "ul" = uorganisert liste, li = listeelement i listen.
 Vi velger alle listeelementene (li), inne i en uordnet liste (ul) med klassen nav */
 
+
 nav ul { 
     list-style-type: none; /* fjerner kulepunkt som er standard for lister*/
     overflow: hidden; /* styrer hva som skjer med innhold som er for stort til å passe inn i et område. "hidden" forteller at innhold som ikke får plass i "boksen" blir skjult/klippet vekk*/
-    background-color: white;
 }
 
 nav li { 
@@ -32,51 +37,10 @@ nav li a { /* css for hvert element "li" refirerer til listeelementene i listen*
   
 nav li a:hover { /* gjør "boksene" endrer farge når muspekeren treffer dem*/
     background-color: grey;
+
 }
 /*CSS TIL NAVBAR SLUTT*/
 
-
-/*=========LIM-BOKSTAV===========*/
-
-h3{
-    font-size: 50px;
-    margin: auto 0;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-/* bokser*/
-#bakgrunn-bokstav-LIM{
-    display: grid;
-    grid-gap: 80px; /* mellomrom mellom "boksene"*/
-    grid-template-columns: repeat(3, 1fr);
-    margin:80px;
-}
-
-.LIM-bokser{
-    display: flex;
-    -webkit-font-smoothing: antialiased; /*gjør teksten "mykere"*/
-    color: black;
-    flex-direction: column; /* plasserer bosene på rekke*/
-    padding: 1rem;
-    justify-content: space-between;
-    text-align: center;
-    margin-top: 80px;
-    margin-bottom: 80px;
-    border-radius: 10px; /*gjør kantene runde*/
-}
-
-#L-boks{
-    border: solid 15px #06d6a0;
-}
-#I-boks{
-    border: solid 15px #118ab2;
-}
-
-#M-boks{
-    border: solid 15px #ffd166;
-
-}
-/*----LIM BOKSTAV SLUTT -----*/
 
 /*-----------CSS GRIDS START------------*/
 .container{
@@ -96,6 +60,7 @@ h3{
 
 .Header{
     grid-column: 1 / span 12; 
+    grid-row: 2;
 }
 
 .LogoForside{
@@ -108,30 +73,20 @@ h3{
     height: 100vh;
 }
 
-/*=======hva tilbyr vi? (sport)===========*/
+/*=======hva tilbyr vi? (sport)
 
-.HvaTilbyrVi{ /* en liten test på bilde med tekst over*/
+.HvaTilbyrVi{ /* en liten test på bilde med tekst over
     grid-column: 1/span 12;
-    text-align: center; /* sentrer teksten*/
+    text-align: center; /* sentrer teksten
+    overflow: hidden;
 }
 .Fotball{
     grid-column: 1/span 3;
     grid-row: 3; 
     padding: 20px;
 }
+===========*/
 
-
-.håndball{
-    grid-column: 4/span 7;
-    grid-row: 3;
-    padding: 20px;
-}
-
-.basketball{
-    grid-column: 8/ span 12;
-    grid-row: 3;
-    padding: 20px;
-}
 
 /*====== BILDEGALLERI=======*/
 
