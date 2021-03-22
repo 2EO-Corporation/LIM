@@ -227,3 +227,13 @@ nav li a:hover { /* gjør "boksene" endrer farge når muspekeren treffer dem*/
 /*------GALLERI TEST 2 SLUTT-------------------*/
 
 
+
+
+/*=========== NETTSIDER NAV-BAR ===============*/
+
+.BildeIdrett{
+    padding: 20px;
+    text-align: center;
+    background-color: grey;
+    
+}
