@@ -47,7 +47,7 @@ nav li a:hover { /* gjør "boksene" endrer farge når muspekeren treffer dem*/
     display: grid;
 
     grid-template-columns: (12, 1fr); /*1fr = 100%, 2fr er 100/2. Vi deler siden i 12 deler hvor disse tilsammen utgjør 100%*/
-    gap: 5px;
+    gap: 10px;
 }
 
 .grid{ /*LAGET FOR AT VI SKAL KUNNE SE LAYPUTEN AV GRIDSENE*/
@@ -90,14 +90,9 @@ nav li a:hover { /* gjør "boksene" endrer farge når muspekeren treffer dem*/
 
 /*====== BILDEGALLERI=======*/
 
-.Interessert{
-    grid-column: 1/ span 7;
-    grid-row: 4;
-}
-
 .Bildegalleri{
-    grid-column: 7 / span 5;    
-    grid-row: 4;
+    grid-column: 1 / span 12;
+    height: 100vh;
 }
 
 /*==========FOOTER=========*/
@@ -105,12 +100,10 @@ nav li a:hover { /* gjør "boksene" endrer farge når muspekeren treffer dem*/
 .Footer{
     grid-column: 1 / span 12;
 }
-
-
 /*---------------------CSS GRIDS SLUTT------------------*/
 
 .LogoForsideBakgrunn{
-    background-image: url(css/bilder/soccer.jpg); /*BAKGRUNNSBILDE*/
+    background-image: url(bilder/Sport.jpg); /*BAKGRUNNSBILDE*/
     background-size: cover;
     padding-top: 170px; /* mellomrom fra toppen av bilde og den grå boksen*/
     
@@ -139,10 +132,10 @@ nav li a:hover { /* gjør "boksene" endrer farge når muspekeren treffer dem*/
     line-height: 2.2;
 }
 
-/* ===========TEST FADE OVERLAY BILDE===========
+/* ===========TEST FADE OVERLAY BILDE===========*/
 
 
-.innhold{ /* "boksen rundt innholdet
+.innhold{ /* "boksen rundt innholdet*/
     position: relative;
     width: 50%;
     margin: 0 auto;
@@ -158,19 +151,19 @@ nav li a:hover { /* gjør "boksene" endrer farge når muspekeren treffer dem*/
 
 .overlay {
     position: absolute;
-    top: 0; /* beskriver hvor overlayen skal plasseres
+    top: 0; /* beskriver hvor overlayen skal plasseres*/
     bottom: 0;
     left: 0;
     right: 0;
     height: 100%;
-    width: 100%; /* hvor stor del av bilde som skal fades
-    opacity: 0; /* overlayen vil ikke synes før man tar muspekeren på bilde, derav 0
+    width: 100%; /* hvor stor del av bilde som skal fades*/
+    opacity: 0; /* overlayen vil ikke synes før man tar muspekeren på bilde, derav 0*/
     transition: .5s ease;
     background-color: #008CBA;
 }
 
 .innhold:hover .overlay {
-    opacity: 0.8; /* gjør teksten gjennomsiktig til man treffer med muspekeren
+    opacity: 0.8; /* gjør teksten gjennomsiktig til man treffer med muspekeren*/
 }
 
 .tekt {
@@ -181,12 +174,12 @@ nav li a:hover { /* gjør "boksene" endrer farge når muspekeren treffer dem*/
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); /* ser ut som om det justerer teksten på bildet
+    transform: translate(-50%, -50%); /* ser ut som om det justerer teksten på bildet*/
     text-align: center;
 }
 
 
- =========== AVSLUTTER TEST FADE OVERLAY BILDE===========*/
+/* =========== AVSLUTTER TEST FADE OVERLAY BILDE===========*/
 
 
 
@@ -209,37 +202,26 @@ nav li a:hover { /* gjør "boksene" endrer farge når muspekeren treffer dem*/
 /*--------------BILDEGALLERI TEST 2 START------*/
 #slideshow {
   overflow: hidden;
-  height: 400px;
-  width: 600px;
+  height: 500px;
+  width: 800px;
+  margin: 0 auto;
 }
 
 .slide-wrapper {
-  width: 2400px;
+  width: 3200px;
   -webkit-animation: slide 10s ease infinite;
 }
 
 .slide {
   float: left;
-  height: 400px;
-  width:600px;
+  height: 500px;
+  width: 800px;
 }
 
 
 @-webkit-keyframes slide {
-  50% {margin-left: -600px;}
-  75% {margin-left: -1200px;}
-  95% {margin-left: -1800px;}
+  50% {margin-left: -800px;}
+  75% {margin-left: -1600px;}
+  95% {margin-left: -2400px;}
 }
 /*------GALLERI TEST 2 SLUTT-------------------*/
-
-
-
-
-/*=========== NETTSIDER NAV-BAR ===============*/
-
-.BildeIdrett{
-    padding: 20px;
-    text-align: center;
-    background-color: grey;
-    
-}
