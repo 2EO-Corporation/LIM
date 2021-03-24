@@ -103,7 +103,7 @@ nav li a:hover { /* gjør "boksene" endrer farge når muspekeren treffer dem*/
 /*---------------------CSS GRIDS SLUTT------------------*/
 
 .LogoForsideBakgrunn{
-    background-image: url(bilder/Sport.jpg); /*BAKGRUNNSBILDE*/
+    background-image: url(); /*BAKGRUNNSBILDE*/
     background-size: cover;
     padding-top: 170px; /* mellomrom fra toppen av bilde og den grå boksen*/
     
