@@ -186,18 +186,51 @@ nav li a:hover { /* gjør "boksene" endrer farge når muspekeren treffer dem*/
 /*FOOTER*/
 
 
-.FooterFlexbox{ /*ONLY TEMPORARY*/
+.FooterFlexbox{ /*Dette er hele bosen med fotter*/
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 
-    text-align: center;
     padding: 3px;
-    background-color: white;
     color: black;
+    background-color: rgb(255, 178, 35);
+    opacity: 0.8; /* gjør omrpdet delvis gjennomsiktig*/
+    height: 70vh;
+    align-items: center;
+
+    /*tekst*/
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    
 }
 
+.FooterTekst{ /* venstre boks ("ta kontakt"-boksen)*/
+    display: flex;
+    padding: 30px;
+    margin: auto 0;
+    flex-direction: column;
+    align-items: center;
+    line-height: 4px; /* linjeavstand*/
+}
 
+.FooterTekst a{ 
+    color: black; /* endrer "hyperlink-fargen" til svart*/
+}
+
+.vertikalLinje{ /* linjene mellom infomasjonen i fotter*/
+    border-left: 2px solid black;
+    height: 200px;
+    position:absolute;
+    left: 50%; /* plasserer linjen i midten av boksen*/
+    }
+
+.ikon{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+    
 
 /*--------------BILDEGALLERI TEST 2 START------*/
 #slideshow {

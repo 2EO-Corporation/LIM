@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>LIM2</title>
     <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!-- linker til google icons, slik at vi kan fp ikoner på nettsiden-->
 </head>
 <body>
     <div class="container"> <!--DIV FOR ALT INNHOLD TIL GRIDS-->
@@ -88,22 +89,24 @@
 
 
     <!--FOOTER START-->
-        <footer class="grid Footer FooterFlexbox">
-                <div>
-                    <p>
-                        Kontaktperson: <br>
-                        Arild Hovland <br>
-                        98817422 <br>
-                        oyvindfluge@gmail.com <br>
-                    </p>  
+        <footer class="Footer FooterFlexbox"> <!--"footer" = grid-boksen -->
+            <div class="FooterTekst"> 
+                <h3> Har du spørsmål?</h3> <br>
+                <p> Ta kontakt på: 988 174 22</p> <br>
+                <p> Eller e-post: <a href= "mailto:oyvindfluge@gmail.com"> oyvindfluge@gmail.com </a> </p>
+                <a href= "mailto:oyvindfluge@gmail.com"> <i class="material-icons"> mail_outline</i> </a> <!--ikon: er en hyperlink og gjør ikonet trykkbart-->
+            </div>
+            <div class="vertikalLinje"> </div> <!-- den vertikale linjen-->
+            
+            <div class="FooterTekst"> 
+                <h3> Følg oss på sosiale medier</h3>
+                <div class="ikon"> <!--for å få ikonene på rekke spesifiserer jeg i css at flex-direction = row-->
+                    <i class="material-icons"> facebook <a href="https://nb-no.facebook.com/"></a></i><br>
+                    <img src="bilder/ikoner/twitter.png" width=20px alt="twitter"> <!-- måtte legge inn bilder og ikke ikoner, det fantes ikke ig. og tw. ikoner på googlefonts. Er bare midlertidig:)-->
+                    <img src="bilder/ikoner/instagram.png" width=20px alt="instagram">
                 </div>
-                <div>
-                    <p>  
-                       Følg oss på sosiale medier
-                    </p>
-                </div>
+            </div>
         </footer>
-    </div>
     <!--FOOTER SLUTT-->
 
 
